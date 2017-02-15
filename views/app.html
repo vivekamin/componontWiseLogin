@@ -1,0 +1,6 @@
+<nav>
+  <a ng-hide="loginSuccess"  ng-link="['LoginComponent']">Login</a>
+  <a ng-show="loginSuccess"   ng-link="['AboutComponent']">About us</a>
+  <a ng-show="loginSuccess"   ng-link="['ContactComponent']">Contact Us</a>
+</nav>
+<ng-outlet></ng-outlet>
