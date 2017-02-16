@@ -4,16 +4,25 @@ loginApp.component('loginComponent' , {
     
 })
     
-function loginController($scope,loginService)
+function loginController($scope,sharedService)
                 {
                     //controlle login component
                     $scope.checkLogin = function(){
-                        loginService.method1();
+                        sharedService.method1();
                     }
                     
-                    $scope.checkLogin1 = function(){
-                        loginService.method2();
+                    $scope.checkLogin1 = function(user){
+                        if(user == "admin"){
+                            sharedService.method2();
+                        }
+                        else{
+                        
+                            alert("Wrong Username");
+                            sharedService.method1();   
+                        }
                     }
+                    
+                    sharedService.method1();
                     
                     
                     
