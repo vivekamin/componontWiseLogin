@@ -18,7 +18,7 @@ loginApp.component('app', {
     controller : appController
 });
 
-function appController($scope,loginService,$location)
+function appController($scope,$location)
                 {
                     //controller login component
                     $scope.loginSuccess=false;
