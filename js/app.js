@@ -11,7 +11,7 @@ loginApp.value('$routerRootComponent', 'app');
 loginApp.component('app', {
   templateUrl:'/views/app.html',
   $routeConfig: [
-    {path: '/login-component', name: 'LoginComponent', component: 'loginComponent',useAsDefault: true},
+    {path: '/login-component', name: 'LoginComponent', component: 'loginComponent'},
     {path: '/about-component', name: 'AboutComponent', component: 'aboutComponent'},
     {path: '/contact-component', name: 'ContactComponent', component: 'contactComponent'}
   ],
