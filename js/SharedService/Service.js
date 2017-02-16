@@ -1,4 +1,4 @@
-loginApp.factory('loginService' , function($rootScope,$http){
+loginApp.factory('sharedService' , function($rootScope,$http){
     
    var factory = {}; 
     factory.synLogin = true;
