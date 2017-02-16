@@ -1,5 +1,37 @@
+<script type="text/javascript">
+  if(typeof appModule === 'undefined'){
+    document.location.href="http://127.0.0.1:55465";
+  }
+</script>
+<div class="container">
+    <div class="row">
 
-<p>In login html {{1+1}}</p>    
-<button ng-click="checkLogin()">Click to run Login Service</button>
-<button ng-click="checkLogin1()">Click to run Login Service 1</button>
-<ng-outlet></ng-outlet>
+            <p>In App html {{1+1}}</p>    
+      <!--  <button ng-click="checkLogin()">Click to run Login Service</button>
+        <button ng-click="checkLogin1(user)">Click to run Login Service 1</button>
+        --> 
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+
+
+                <form action="" role="form">
+                    <legend>Login</legend>
+
+                    <div class="form-group">
+                        <label for="">Username</label>
+                        <input type="text" class="form-control" ng-model="user" id="" placeholder="Input field">
+                    </div>
+
+
+
+                   
+                </form>
+              <button ng-click="checkLogin1(user)" class="btn btn-primary">Submit</button>
+             </div>
+
+
+        <ng-outlet></ng-outlet>
+    </div>
+</div>
+
+

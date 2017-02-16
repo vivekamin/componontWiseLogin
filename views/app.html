@@ -1,6 +1,17 @@
-<nav>
-  <a ng-hide="loginSuccess"  ng-link="['LoginComponent']">Login</a>
-  <a ng-show="loginSuccess"   ng-link="['AboutComponent']">About us</a>
-  <a ng-show="loginSuccess"   ng-link="['ContactComponent']">Contact Us</a>
-</nav>
+<script type="text/javascript">
+  if(typeof appModule === 'undefined'){
+    document.location.href="http://127.0.0.1:55465";
+  }
+</script>
+<div class="container">
+    <div class="row">
+         Demo Project{{1+1}}
+        <nav>
+          <a ng-hide="loginSuccess"  ng-link="['LoginComponent']">Login</a>
+          <a ng-show="loginSuccess"   ng-link="['AboutComponent']">About us</a>
+          <a ng-show="loginSuccess"   ng-link="['ContactComponent']">Contact Us</a>
+          <a ng-show="loginSuccess" ng-link="['LoginComponent']">Logout</a>
+        </nav>
 <ng-outlet></ng-outlet>
+    </div>
+</div>
