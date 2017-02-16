@@ -32,8 +32,19 @@ function appController($scope,$location)
                                     $location.path('/about-component');
                                     
                                     }
+                                else 
+                                    {
+                                        $scope.loginSuccess = arg;
+                                        $location.path('/login-component');
+                                        
+                                    }
                                 
                               });
+                    $scope.logout = function(){
+                        $scope.loginSuccess = false;
+                        $location.path('/login-component');
+                        
+                    };
                     
 
                 }
